@@ -1,0 +1,65 @@
+[
+    {
+        "id": "OS-202405201030",
+        "customer": "Condom\u00ednio Solar das Aves",
+        "address": "Av. das Na\u00e7\u00f5es, 1500",
+        "equipment_id": "1707012345",
+        "qty_used": 2,
+        "reason": "Manuten\u00e7\u00e3o preventiva e troca de posicionamento de c\u00e2meras.",
+        "date": "20\/05\/2024 10:30",
+        "items": []
+    },
+    {
+        "id": "OS-202405211420",
+        "customer": "Supermercado Pre\u00e7o Bom",
+        "address": "Rua XV de Novembro, 45",
+        "equipment_id": "1707012347",
+        "qty_used": 5,
+        "reason": "Instala\u00e7\u00e3o de novos sensores no setor de estoque.",
+        "date": "21\/05\/2024 14:20",
+        "items": []
+    },
+    {
+        "customer": "Bela vista",
+        "address": "rgf",
+        "reason": "",
+        "items": {
+            "1707012345": 3,
+            "1770153503": 1
+        },
+        "id": "OS-20260203-213521",
+        "date": "03\/02\/2026 21:35"
+    },
+    {
+        "customer": "Bela vista",
+        "address": "rgf",
+        "reason": "",
+        "items": {
+            "1707012345": 0
+        },
+        "id": "OS-20260203-214158",
+        "date": "03\/02\/2026 21:41"
+    },
+    {
+        "customer": "Akamine",
+        "address": "Agora",
+        "reason": "",
+        "items": {
+            "1707012346": 1,
+            "1707012347": 6
+        },
+        "id": "OS-20260204-143141",
+        "date": "04\/02\/2026 14:31 (Editada)"
+    },
+    {
+        "customer": "Bela vista",
+        "address": "Rua Est\u00e2ncia",
+        "reason": "",
+        "items": {
+            "1707012346": 2,
+            "1707012347": 3
+        },
+        "id": "OS-20260204-144648",
+        "date": "04\/02\/2026 14:46"
+    }
+]

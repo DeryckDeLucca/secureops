@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1707012345,
+        "name": "C\u00e2mera Intelbras VIP 123",
+        "category": "Monitoramento",
+        "quantity": 0,
+        "min_stock": 6
+    },
+    {
+        "id": 1707012346,
+        "name": "R\u00e1dio HT Baofeng UV-5R",
+        "category": "Comunica\u00e7\u00e3o",
+        "quantity": 0,
+        "min_stock": 10
+    },
+    {
+        "id": 1707012347,
+        "name": "Sensor de Presen\u00e7a Infra",
+        "category": "Sensores",
+        "quantity": 16,
+        "min_stock": 8
+    },
+    {
+        "name": "Sendor de movimento",
+        "category": "Sensores",
+        "quantity": 16,
+        "min_stock": "19",
+        "id": 1770153503
+    }
+]
