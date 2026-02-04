@@ -3,7 +3,7 @@
         "id": 1707012345,
         "name": "C\u00e2mera Intelbras VIP 123",
         "category": "Monitoramento",
-        "quantity": 0,
+        "quantity": 1,
         "min_stock": 6
     },
     {
@@ -23,8 +23,14 @@
     {
         "name": "Sendor de movimento",
         "category": "Sensores",
-        "quantity": 16,
+        "quantity": 17,
         "min_stock": "19",
         "id": 1770153503
+    },
+    {
+        "name": "Facial",
+        "quantity": 10,
+        "min_stock": 5,
+        "id": 1770218191
     }
 ]
