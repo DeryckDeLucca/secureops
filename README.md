@@ -26,6 +26,19 @@ O sistema foi construído com uma stack leve e nativa, garantindo rapidez no car
 
 ---
 
+## 🏗️ Estrutura de Arquivos
+```text
+├── actions.php          # Processamento de formulários e métodos back-end
+├── index.php            # Ponto de entrada e controlador de rotas/layout
+├── src/
+│   └── Engine.php       # Core do sistema (Lógica de negócio e persistência)
+├── views/               # Camada de visualização (UI)
+│   ├── dashboard.php
+│   ├── estoque.php
+│   └── os.php
+└── data/                # Armazenamento dos dados (JSON/Database)
+```
+
 ## 🛠️ Instalação e Execução
 
 Clone o repositório:
@@ -38,17 +51,4 @@ Servidor Local: Navegue até a pasta raiz do projeto via terminal e execute:
 
 | **php -S localhost:8000** |
 
----
-
-## 🏗️ Estrutura de Arquivos
-```text
-├── actions.php          # Processamento de formulários e métodos back-end
-├── index.php            # Ponto de entrada e controlador de rotas/layout
-├── src/
-│   └── Engine.php       # Core do sistema (Lógica de negócio e persistência)
-├── views/               # Camada de visualização (UI)
-│   ├── dashboard.php
-│   ├── estoque.php
-│   └── os.php
-└── data/                # Armazenamento dos dados (JSON/Database)
 ---
