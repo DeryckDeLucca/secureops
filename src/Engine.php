@@ -1,19 +1,29 @@
 <?php
+
 namespace SecureOps;
 
-class Engine {
+class Engine
+{
     private $inventoryFile = __DIR__ . '/../data/inventory.json';
     private $ordersFile = __DIR__ . '/../data/orders.json';
 
-    private function load($file) {
+    private function load($file)
+    {
         if (!file_exists($file)) return [];
         return json_decode(file_get_contents($file), true) ?: [];
     }
 
-    public function getInventory() { return $this->load($this->inventoryFile); }
-    public function getOrders() { return $this->load($this->ordersFile); }
+    public function getInventory()
+    {
+        return $this->load($this->inventoryFile);
+    }
+    public function getOrders()
+    {
+        return $this->load($this->ordersFile);
+    }
 
-    public function saveEquipment($data) {
+    public function saveEquipment($data)
+    {
         $items = $this->getInventory();
         if (!isset($data['id']) || empty($data['id'])) {
             $data['id'] = time();
@@ -30,7 +40,8 @@ class Engine {
         file_put_contents($this->inventoryFile, json_encode(array_values($items), JSON_PRETTY_PRINT));
     }
 
-    public function createOS($osData) {
+    public function createOS($osData)
+    {
         $orders = $this->getOrders();
         $inventory = $this->getInventory();
         $itemsUsed = $osData['items'] ?? [];
@@ -52,7 +63,8 @@ class Engine {
         return true;
     }
 
-    public function updateOS($id, $newData) {
+    public function updateOS($id, $newData)
+    {
         $orders = $this->getOrders();
         $inventory = $this->getInventory();
         $osIndex = null;
@@ -93,7 +105,8 @@ class Engine {
         return true;
     }
 
-    public function deleteOS($id) {
+    public function deleteOS($id)
+    {
         $orders = $this->getOrders();
         $inventory = $this->getInventory();
         $targetOS = null;
@@ -119,7 +132,8 @@ class Engine {
         return false;
     }
 
-    private function saveAll($orders, $inventory) {
+    private function saveAll($orders, $inventory)
+    {
         file_put_contents($this->ordersFile, json_encode(array_values($orders), JSON_PRETTY_PRINT));
         file_put_contents($this->inventoryFile, json_encode(array_values($inventory), JSON_PRETTY_PRINT));
     }

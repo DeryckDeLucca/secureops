@@ -6,16 +6,16 @@ $method = $_GET['method'] ?? '';
 // Caminho absoluto para evitar erros de arquivo
 $inventoryFile = __DIR__ . '/data/inventory.json';
 
-switch($method) {
-    
+switch ($method) {
+
     // --- GESTÃO DE ORDENS DE SERVIÇO ---
 
     case 'createOS':
     case 'updateOS':
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $items = [];
-            if(isset($_POST['eq_ids'])) {
-                foreach($_POST['eq_ids'] as $idx => $id) {
+            if (isset($_POST['eq_ids'])) {
+                foreach ($_POST['eq_ids'] as $idx => $id) {
                     $items[$id] = (int)$_POST['eq_qtys'][$idx];
                 }
             }
@@ -27,8 +27,8 @@ switch($method) {
             ];
 
             // Se for createOS, chama create. Se for updateOS, chama update.
-            $res = ($method === 'createOS') 
-                ? $engine->createOS($data) 
+            $res = ($method === 'createOS')
+                ? $engine->createOS($data)
                 : $engine->updateOS($_POST['os_id'], $data);
 
             if (!$res) {
@@ -47,7 +47,7 @@ switch($method) {
         exit;
 
 
-    // --- GESTÃO DE EQUIPAMENTOS (ESTOQUE) ---
+        // --- GESTÃO DE EQUIPAMENTOS (ESTOQUE) ---
 
     case 'saveEquipment':
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -63,8 +63,8 @@ switch($method) {
     case 'updateFull':
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $inventory = $engine->getInventory();
-            foreach($inventory as &$item) {
-                if($item['id'] == $_POST['id']) {
+            foreach ($inventory as &$item) {
+                if ($item['id'] == $_POST['id']) {
                     $item['name']      = $_POST['name'];
                     $item['min_stock'] = (int)$_POST['min_stock'];
                 }
@@ -78,8 +78,8 @@ switch($method) {
         $id = $_GET['id'];
         $change = (int)$_GET['change'];
         $inventory = $engine->getInventory();
-        foreach($inventory as &$item) {
-            if($item['id'] == $id) {
+        foreach ($inventory as &$item) {
+            if ($item['id'] == $id) {
                 $item['quantity'] = max(0, $item['quantity'] + $change);
             }
         }

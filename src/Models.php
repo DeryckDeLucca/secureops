@@ -1,10 +1,12 @@
 <?php
+
 namespace SecureOps;
 
 /**
  * Classe que representa um Equipamento no Inventário
  */
-class Equipment {
+class Equipment
+{
     public function __construct(
         public int $id,
         public string $name,
@@ -14,7 +16,8 @@ class Equipment {
     ) {}
 
     // Lógica para verificar se o item precisa de reposição
-    public function needsRestock(): bool {
+    public function needsRestock(): bool
+    {
         return $this->quantity <= $this->min_stock;
     }
 }
@@ -22,7 +25,8 @@ class Equipment {
 /**
  * Classe que representa uma Ordem de Serviço (Visita Técnica)
  */
-class ServiceOrder {
+class ServiceOrder
+{
     public function __construct(
         public string $id,
         public string $customer,
@@ -34,7 +38,8 @@ class ServiceOrder {
     ) {}
 
     // Formata o ID para exibição (ex: OS-2024...)
-    public function getFormattedId(): string {
+    public function getFormattedId(): string
+    {
         return strtoupper($this->id);
     }
 }
