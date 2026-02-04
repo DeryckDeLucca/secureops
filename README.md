@@ -4,15 +4,6 @@ O **SecureOps** é uma plataforma simplificada e funcional desenvolvida para emp
 
 ---
 
-## 🚀 Diferenciais do Design
-
-Diferente de sistemas genéricos, o SecureOps utiliza conceitos modernos de UX para otimizar o fluxo de trabalho técnico:
-- **Bento Grid Layout:** Organização de informações em blocos claros e responsivos.
-- **Dual-Independent Scroll:** Sistema de colunas com rolagens independentes na página de OS, permitindo que o técnico preencha o formulário enquanto consulta o histórico sem perder o foco.
-- **Sidebar Fixa:** Navegação sempre acessível, garantindo fluidez entre os módulos de estoque e serviços.
-
----
-
 ## 🛠️ Tecnologias Utilizadas
 
 O sistema foi construído com uma stack leve e nativa, garantindo rapidez no carregamento e facilidade de manutenção:
@@ -37,7 +28,6 @@ O sistema foi construído com uma stack leve e nativa, garantindo rapidez no car
 
 ## 🏗️ Estrutura de Arquivos
 
-```text
 ├── actions.php          # Processamento de formulários e métodos back-end
 ├── index.php            # Ponto de entrada e controlador de rotas/layout
 ├── src/
@@ -47,6 +37,8 @@ O sistema foi construído com uma stack leve e nativa, garantindo rapidez no car
 │   ├── estoque.php
 │   └── os.php
 └── data/                # Armazenamento dos dados (JSON/Database)
+---
+
 
 ## 🛠️ Instalação e Execução
 
