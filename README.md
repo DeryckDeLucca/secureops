@@ -26,6 +26,20 @@ O sistema foi construído com uma stack leve e nativa, garantindo rapidez no car
 
 ---
 
+## 🛠️ Instalação e Execução
+
+Clone o repositório:
+
+| **git clone https://github.com/DeryckDeLucca/secureops.git** |
+
+Requisitos: Certifique-se de que possui o PHP 8.0+ instalado em sua máquina ou servidor.
+
+Servidor Local: Navegue até a pasta raiz do projeto via terminal e execute:
+
+| **php -S localhost:8000** |
+
+---
+
 ## 🏗️ Estrutura de Arquivos
 ```text
 ├── actions.php          # Processamento de formulários e métodos back-end
@@ -38,16 +52,3 @@ O sistema foi construído com uma stack leve e nativa, garantindo rapidez no car
 │   └── os.php
 └── data/                # Armazenamento dos dados (JSON/Database)
 ---
-
-
-## 🛠️ Instalação e Execução
-
-Clone o repositório:
-
-| **git clone https://github.com/DeryckDeLucca/secureops.git** |
-
-Requisitos: Certifique-se de que possui o PHP 8.0+ instalado em sua máquina ou servidor.
-
-Servidor Local: Navegue até a pasta raiz do projeto via terminal e execute:
-
-| **php -S localhost:8000** |
